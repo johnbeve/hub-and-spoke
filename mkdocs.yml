@@ -10,19 +10,13 @@ nav:
   - Basic Formal Ontology: basic-formal-ontology.md
   - Scope: scope.md
   - Conformance: conformance.md
-  - Normative Reference: normative-reference.md
+  - Users and Applications: users-and-applications.md
   - Terms and Definitions: terms-and-definitions.md
   - Conventions: conventions.md
   - BFO-Core: bfo-core.md
-  - Temporalized Relations Extension: temporalized-relations-extensions.md
-  - Stasis Extension: stasis-extension.md
-  - Temporal Annotation Extension: temporal-annotation-extension.md
-  - Mapping Extensions: mapping-extensions.md
+  - Temporal Extensions: temporal-extensions.md
   - Important Extensions: important-extensions.md
   - Summary: summary.md
-  - Annex A - Design Patterns: design-patterns.md
-  - Annex B - SPARQL Quality Control: sparql-quality-control.md
-  - Annex C - SHACL Quality Control: shacl-quality-control.md
 
 
 
