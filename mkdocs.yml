@@ -5,18 +5,18 @@ theme:
   name: readthedocs
 nav:
   - Home: docs/index.md
-  - Preface: preface.md
-  - Introduction: introduction.md
-  - Basic Formal Ontology: basic-formal-ontology.md
-  - Scope: scope.md
-  - Conformance: conformance.md
-  - Users and Applications: users-and-applications.md
-  - Terms and Definitions: terms-and-definitions.md
-  - Conventions: conventions.md
-  - BFO-Core: bfo-core.md
-  - Temporal Extensions: temporal-extensions.md
-  - Important Extensions: important-extensions.md
-  - Summary: summary.md
+  - Preface: docs/preface.md
+  - Introduction: docs/introduction.md
+  - Basic Formal Ontology: docs/basic-formal-ontology.md
+  - Scope: docs/scope.md
+  - Conformance: docs/conformance.md
+  - Users and Applications: docs/users-and-applications.md
+  - Terms and Definitions: docs/terms-and-definitions.md
+  - Conventions: docs/conventions.md
+  - BFO-Core: docs/bfo-core.md
+  - Temporal Extensions: docs/temporal-extensions.md
+  - Important Extensions: docs/important-extensions.md
+  - Summary: docs/summary.md
 
 
 
