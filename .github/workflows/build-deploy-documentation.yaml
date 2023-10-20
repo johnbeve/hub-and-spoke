@@ -26,3 +26,5 @@ jobs:
         
       # deploy documentation (note: requires documentation is in docs dir)
       - run: mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
