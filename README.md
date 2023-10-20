@@ -41,12 +41,7 @@ This repository maintains the Basic Formal Ontology (BFO) artifact conformant to
 
 ## Directory Structure
 
-    BFO User Guide - 
-    BFO Design Patterns - 
-    BFO Formalizations - 
-    BFO Validation - 
-    BFO Temporal Extensions - 
-    
+
 ## Versioning and Release Process
 
 
