@@ -4,7 +4,7 @@ edit_uri: '?query=root/hub-and-spoke/docs/'
 theme:
   name: readthedocs
 nav:
-  - Home: index.md
+  - Home: docs/index.md
   - Preface: preface.md
   - Introduction: introduction.md
   - Basic Formal Ontology: basic-formal-ontology.md
