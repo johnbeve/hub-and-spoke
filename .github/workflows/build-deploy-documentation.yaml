@@ -23,13 +23,17 @@ jobs:
       # install dependencies
       - run: pip install --upgrade pip
       - run: pip install mkdocs
-        
+ 
+      # Build the documentation
+      - run: mkdocs build
+
+      # Deploy using ghp-import
       - run: |
-          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/johnbeve/hub-and-spoke.git
-          mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
+          pip install ghp-import
+          ghp-import -n -p -f site
         env:
-          GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-
-
+          GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          GIT_NAME: "github-actions[bot]"
+          GIT_EMAIL: "github-actions[bot]@users.noreply.github.com"
 
           
