@@ -26,6 +26,8 @@ jobs:
         
       - run: |
           export GH_TOKEN=${{ secrets.MY_GITHUB_TOKEN }}
-          mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs --remote-name GH_TOKEN
+          mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
 
           
