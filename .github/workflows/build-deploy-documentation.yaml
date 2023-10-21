@@ -24,7 +24,8 @@ jobs:
       - run: pip install --upgrade pip
       - run: pip install mkdocs
         
-      # deploy documentation (note: requires documentation is in docs dir)
-      - run: mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          export GH_TOKEN=${{ secrets.MY_GITHUB_TOKEN }}
+          mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
+
+          
