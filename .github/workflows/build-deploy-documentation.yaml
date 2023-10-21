@@ -29,11 +29,11 @@ jobs:
 
       # Deploy using ghp-import
       - run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           pip install ghp-import
           ghp-import -n -p -f site
         env:
           GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
-          GIT_NAME: "github-actions[bot]"
-          GIT_EMAIL: "github-actions[bot]@users.noreply.github.com"
 
           
