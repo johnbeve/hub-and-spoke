@@ -25,9 +25,11 @@ jobs:
       - run: pip install mkdocs
         
       - run: |
-          export GH_TOKEN=${{ secrets.MY_GITHUB_TOKEN }}
+          git remote set-url origin https://x-access-token:${GH_TOKEN}@github.com/johnbeve/hub-and-spoke.git
           mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
         env:
           GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+
+
 
           
