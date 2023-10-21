@@ -32,7 +32,7 @@ jobs:
           pip install ghp-import
           ghp-import -n -p -f site
         env:
-          GH_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+          GH_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
           GIT_NAME: "github-actions[bot]"
           GIT_EMAIL: "github-actions[bot]@users.noreply.github.com"
 
