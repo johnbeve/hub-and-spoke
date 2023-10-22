@@ -3,21 +3,22 @@ repo_url: https://github.com/johnbeve/hub-and-spoke/
 edit_uri: '?query=root/hub-and-spoke/docs/'
 theme:
   name: material
+  features:
+    - header.autohide
   palette:
-    scheme: dark
+    primary: white
+    accent: green
+    scheme: slate
 nav:
   - Home: index.md
-  - Preface: preface.md
   - Introduction: introduction.md
-  - Basic Formal Ontology: basic-formal-ontology.md
   - Scope: scope.md
   - Conformance: conformance.md
-  - Users and Applications: users-and-applications.md
-  - Terms and Definitions: terms-and-definitions.md
   - Conventions: conventions.md
+  - Terms and Definitions: terms-and-definitions.md
   - BFO-Core: bfo-core.md
   - Temporal Extensions: temporal-extensions.md
-  - Important Extensions: important-extensions.md
+  - Users and Applications: users-and-applications.md
   - Summary: summary.md
 
 
