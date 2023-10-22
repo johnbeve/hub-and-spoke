@@ -1,7 +1,7 @@
 # Taking Time Seriously
 A long-standing issue among BFO users and developers has concerned how best to represent time. Importantly, issues concerning time in BFO stem from implementations of BFO in restricted formal languages such as the Web Ontology Language (OWL). OWL does not allow for direct representation of relations with arity higher than two. To illustrate the issue, consider modeling a vehicle having an engine part at some time, but losing that engine part at another. An expressive language such as First-Order Logic (FOL) would permit the following representation: 
 
-    (1) has_part(vehicle, engine, time_1) & ~has_part(vehicle, engine, time_2)
+    has_part(vehicle, engine, time_1) & ~has_part(vehicle, engine, time_2)
 
 Since FOL allows using ternary relations. OWL's restriction to at most binary relations precludes expressions like (1); indeed, there is no simple, straightforward way
 to represent the content of (1) in OWL. Given the need to represent time and change in many domains and the wide use of OWL in ontology circles, proposals have been offered by users of BFO for representing such phenomena within the binary constraints of OWL.  
@@ -20,23 +20,19 @@ On the other hand, there are reasons that speak in favor of providing formal gui
 > 4. Other foundry efforts, such as the [Industrial Ontology Foundry](https://www.industrialontologies.org/) which uses BFO as its top-level architecture, anticipate the need for a rigorous formalization of time.
 > 5. [Recent work](https://pubmed.ncbi.nlm.nih.gov/36534832/) demonstrating the importance of rigorous axiomatization of ontologies used to supplement machine learning pipelines with minimal datasets, suggests rigorous BFO formalizations of time ontologies may be useful in such contexts. 
 
-What these observations suggest is that while there are strong motivations for BFO providing - perhaps significant - guidance to users who require a robust formalization of time, imposing any specific formalization of time - such as the A - F proposals - on all users would be in some cases unnecessarily onerous. To satisfy needs of the community then, the BFO development team encourages a strategy of developing and deploying Temporal Profiles which will provide users options for representing time in their domains.
+What these observations suggest is that while there are strong motivations for BFO providing - perhaps significant - guidance to users who require a robust formalization of time, imposing any specific formalization of time on all users would be in some cases unnecessarily onerous. To satisfy needs of the community then, the BFO development team encourages a strategy of developing and deploying Temporal Profiles which will provide users options for representing time in their domains.
 
 ## Temporal Extensions Implementation
 Temporal extensions should be implemented in a decidable flavor of OWL, such as [OWL2-DL](https://www.w3.org/TR/owl2-overview/). While terminological content differs across temporal profiles, developers are encouraged to abide by the following design principles: 
 
-> 
+- The scope of Temporal Extensions should include treatment of classes and relationships such as: 
+    - Temporal Region and subclasses 
+    - Spatiotemporal Region 
+    - Object properties relating to time, whether explicit or implicit
 
-## Temporal Extension Artifacts
-Temporal Extension Artifacts are artifacts designed to represent extensions of the OWL formalization of BFO that impose axiom constraints concerning time and change. Temporal Extension Artifacts should be represented in some serialization of RDF, e.g. ttl, owl. 
-
-With respect to BFO, the scope of Temporal Extensions should include treatment of classes and relationships such as: 
-
-* Temporal Region and subclasses 
-* Spatiotemporal Region 
-* Object properties relating to time, whether explicit or implicit 
-
-Motivating use cases often vary based on domain and user community. We recommend developers use, as a starting point, design patterns and use cases concerning time and change found in the article [Basic Formal Ontology: Case Studies](https://philpapers.org/archive/OTTBBF.pdf). There the authors present seven design patterns based on the FOL implementation of BFO. 
+- Temporal Extension Artifacts should be represented in some serialization of RDF, e.g. ttl, owl.
+ 
+- Use, as a starting point, design patterns and use cases concerning time and change found in the article [Basic Formal Ontology: Case Studies](https://philpapers.org/archive/OTTBBF.pdf). There the authors present seven design patterns based on the FOL implementation of BFO. 
 
 ## Temporal Extension Integration
 Putting aside the varying relative maturity levels of each Temporal Extension, there is a further pressing question concerning interoperability. BFO is a top-level ontology designed to provide a common hierarchy across all scientific research; interoperability is its motivation. With this in mind, it is thus incumbent on developers to demonstrate not only that their preferred formalization of time conforms to BFO, but also that interpretations, formal mappings, or provable containments exists across strategies. This is, admittedly, a great deal of work, but it is a consequence of sustaining interoperability, a goal our community prizes. 
