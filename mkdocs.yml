@@ -3,6 +3,8 @@ repo_url: https://github.com/johnbeve/hub-and-spoke/
 edit_uri: '?query=root/hub-and-spoke/docs/'
 theme:
   name: material
+  palette:
+    scheme: dark
 nav:
   - Home: index.md
   - Preface: preface.md
