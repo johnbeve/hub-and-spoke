@@ -22,7 +22,7 @@ jobs:
           
       # install dependencies
       - run: pip install --upgrade pip
-      - run: pip install mkdocs
+      - run: pip install mkdocs mkdocs-material
  
       # Build the documentation
       - run: mkdocs build
