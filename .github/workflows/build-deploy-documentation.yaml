@@ -28,6 +28,6 @@ jobs:
       - run: mkdocs build
 
       # Deploy using ghp-import
-      - run: mkdocs gh-deploy --remote-branch gh-pages --force --theme readthedocs
+      - run: mkdocs gh-deploy --remote-branch gh-pages --force 
 
           
