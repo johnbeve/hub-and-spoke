@@ -29,5 +29,3 @@ jobs:
 
       # Deploy using ghp-import
       - run: mkdocs gh-deploy --remote-branch gh-pages --force 
-
-          
