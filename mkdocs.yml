@@ -6,9 +6,9 @@ theme:
   features:
     - header.autohide
   palette:
-    primary: white
-    accent: green
-    scheme: slate
+    primary: 'white'
+    accent: 'green'
+    scheme: 'slate'
 nav:
   - Home: index.md
   - Introduction: introduction.md
