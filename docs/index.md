@@ -34,7 +34,7 @@ graph TD
     AC(Temporal<br> Region) --> AI(One-Dimensional<br> Temporal Region)
     AF(Zero-Dimensional<br> Temporal Region) --> AG(Temporal<br> Instant)
     AI(One-Dimensional<br> Temporal Region) --> AH(Temporal<br> Interval)
-</pre>![image](https://github.com/johnbeve/hub-and-spoke/assets/16356971/93f46003-e434-45ea-895f-4d4f603530e0)
+</pre>
 
 The domain is comprised of particulars that stand in the primitive instances of relation to universals at times. BFO’s hierarchy of uni- versals can be represented by defining the relation:
 * ∀x,tisa(A,B)=def instanceof(x,A,t)→instanceof(x,B,t)
