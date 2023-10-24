@@ -2,10 +2,10 @@ site_name: "Basic Formal Ontology"
 repo_url: https://github.com/johnbeve/hub-and-spoke/
 edit_uri: '?query=root/hub-and-spoke/docs/'
 theme:
-  name: 'material'
+  name: material
   palette:
-    primary: 'white'
-    accent: 'green'
+    primary: white
+    accent: green
 nav:
   - Home: index.md
   - Introduction: introduction.md
