@@ -6,7 +6,6 @@ theme:
   palette:
     primary: 'white'
     accent: 'green'
-    scheme: 'dark'
 nav:
   - Home: index.md
   - Introduction: introduction.md
