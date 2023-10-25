@@ -2,7 +2,7 @@
 
 The domain is comprised of particulars that stand in the primitive instances of relation to universals at times. BFO’s hierarchy of universals can be represented by defining the relation:
 
-    ```∀x,t is_a(A,B)=def instance_of(x,A,t)→instance_of(x,B,t)```
+    ∀x,t is_a(A,B)=def instance_of(x,A,t)→instance_of(x,B,t)
 
 For example, material entity is a independent continuant.
 
@@ -28,14 +28,14 @@ graph TD
     B(Continuant) --> D(Specifically Dependent<br> Continuant)
     B(Continuant) --> E(Generically Dependent<br> Continuant)
     B(Continuant) --> F(Independent<br> Continuant)
+    F(Independent<br> Continuant) --> G(Material Entity)
+    F(Independent<br> Continuant) --> H(Immaterial<br> Entity)
 </pre>
 
 Starting at the continuant side of the BFO hierarchy, an independent continuant is distinguished from other continuants in that they neither generically nor specifically depend on other entities. In contrast, a specifically dependent continuant specifically depends on an independent continuant8 rigidly. If x specifically depends on y, then as long as x exists, the relation holds. If y ceases to exist, then x does as well.
 
 <pre class="mermaid language-mermaid">
 graph TD    
-    F(Independent<br> Continuant) --> G(Material Entity)
-    F(Independent<br> Continuant) --> H(Immaterial<br> Entity)
     H(Immaterial<br> Entity) --> O(Site)
     H(Immaterial<br> Entity) --> P(Spatial<br> Region)
     H(Immaterial<br> Entity) --> Q(Continuant Fiat<br> Boundary)
@@ -45,9 +45,6 @@ graph TD
     P(Spatial<br> Region) --> U(One-Dimensional<br> Spatial Region)
     P(Spatial<br> Region) --> V(Two-Dimensional<br> Spatial Region)
     P(Spatial<br> Region) --> W(Three-Dimensional<br> Spatial Region)
-    G(Material<br> Entity) --> X(Fiat Object Part)
-    G(Material<br> Entity) --> Y(Object<br> Aggregate)
-    G(Material<br> Entity) --> Z(Object)
 </pre>
 
 A specifically dependent continuant is said to inhere in – a relation defined in terms of specifically depends on – an instance of independent continuant. The inverse of inheres in is bearer of. A generically dependent continuant is concretized by a process or specifically dependent continuant. When the concretization is a specifically dependent continuant the generically dependent continuant generically depends on the specifically dependent continuant’s bearer.
@@ -63,6 +60,13 @@ graph TD
 </pre>
 
 All independent continuants other than spatial regions occupy a spatial region, and so are extended in space and time. Some may be located in others at some time, as the food you ingest is at some point located in the lumen of your stomach after you have eaten. Located in is transitive.
+
+<pre class="mermaid language-mermaid">
+graph TD
+    G(Material<br> Entity) --> X(Fiat Object Part)
+    G(Material<br> Entity) --> Y(Object<br> Aggregate)
+    G(Material<br> Entity) --> Z(Object)
+</pre>
 
 A material entity can be continuant part of another material entity at some time. Material entities can have material and immaterial parts. An object can be member part of an object aggregate. Member part of is not transitive but implies continuant part of. An object aggregate always has at least one member, and must, at some time, have more than one.
 
