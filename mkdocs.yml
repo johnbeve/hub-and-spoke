@@ -4,7 +4,7 @@ edit_uri: '?query=root/hub-and-spoke/docs/'
 theme:
   name: material
   palette:
-    primary: black
+    primary: 'black'
 nav:
   - Home: index.md
   - Introduction: introduction.md
