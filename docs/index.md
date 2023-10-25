@@ -28,6 +28,7 @@ graph TD
     B(Continuant) --> D(Specifically Dependent<br> Continuant)
     B(Continuant) --> E(Generically Dependent<br> Continuant)
     B(Continuant) --> F(Independent<br> Continuant)
+</pre>
 
 Starting at the continuant side of the BFO hierarchy, an independent continuant is distinguished from other continuants in that they neither generically nor specifically depend on other entities. In contrast, a specifically dependent continuant specifically depends on an independent continuant8 rigidly. If x specifically depends on y, then as long as x exists, the relation holds. If y ceases to exist, then x does as well.
 
