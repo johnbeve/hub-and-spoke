@@ -1,7 +1,9 @@
 ### Domain
 
 The domain is comprised of particulars that stand in the primitive instances of relation to universals at times. BFO’s hierarchy of universals can be represented by defining the relation:
-```∀x,tisa(A,B)=def instanceof(x,A,t)→instanceof(x,B,t)```
+
+    ```∀x,t is_a(A,B)=def instance_of(x,A,t)→instance_of(x,B,t)```
+
 For example, material entity is a independent continuant.
 
 By rigid universal Ur, we mean any entity that is instantiated by Ur, instantiates Ur for the whole of its existence. All classes in BFO are rigid other than the three subclasses of material entity: fiat object part, object, and object aggregate. For example, an instance of object aggregate at some time may later instantiate object.
