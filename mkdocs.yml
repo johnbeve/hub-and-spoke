@@ -6,8 +6,8 @@ theme:
   palette:
     primary: 'black'
 nav:
-  - Home: index.md
   - Introduction: introduction.md
+  - Basic Formal Ontology: index.md
   - Scope: scope.md
   - Conformance: conformance.md
   - Conventions: conventions.md
