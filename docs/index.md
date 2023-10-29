@@ -38,15 +38,22 @@ Starting at the continuant side of the BFO hierarchy, an independent continuant 
 
 <pre class="mermaid language-mermaid">
 graph TD    
-    H(Immaterial<br> Entity):::BFO --> O(Site):::BFO
     H(Immaterial<br> Entity):::BFO --> P(Spatial<br> Region):::BFO
+    P(Spatial<br> Region):::BFO --> U(One-Dimensional<br> Spatial Region):::BFO
+    P(Spatial<br> Region):::BFO --> V(Two-Dimensional<br> Spatial Region):::BFO
+    P(Spatial<br> Region):::BFO --> W(Three-Dimensional<br> Spatial Region):::BFO
+
+    classDef BFO fill:#4b0082,color:#FFFFFF
+
+</pre>
+
+<pre class="mermaid language-mermaid">
+graph TD    
+    H(Immaterial<br> Entity):::BFO --> O(Site):::BFO
     H(Immaterial<br> Entity):::BFO --> Q(Continuant Fiat<br> Boundary):::BFO
     Q(Continuant Fiat<br> Boundary):::BFO --> R(Fiat<br> Point):::BFO
     Q(Continuant Fiat<br> Boundary):::BFO --> S(Fiat<br> Surface):::BFO
     Q(Continuant Fiat<br> Boundary):::BFO --> T(Fiat<br> Line):::BFO
-    P(Spatial<br> Region):::BFO --> U(One-Dimensional<br> Spatial Region):::BFO
-    P(Spatial<br> Region):::BFO --> V(Two-Dimensional<br> Spatial Region):::BFO
-    P(Spatial<br> Region):::BFO --> W(Three-Dimensional<br> Spatial Region):::BFO
 
     classDef BFO fill:#4b0082,color:#FFFFFF
 
@@ -87,7 +94,7 @@ graph TD
     C(Occurrent):::BFO --> AB(Process<br> Boundary):::BFO
     C(Occurrent):::BFO --> AC(Temporal<br> Region):::BFO
     C(Occurrent):::BFO --> AD(Spatiotemporal<br> Region):::BFO
-    AA(Process):::BFO --> AE(History)
+    AA(Process):::BFO --> AE(History):::BFO
     AC(Temporal<br> Region):::BFO --> AF(Zero-Dimensional<br> Temporal Region):::BFO
     AC(Temporal<br> Region):::BFO --> AI(One-Dimensional<br> Temporal Region):::BFO
     AF(Zero-Dimensional<br> Temporal Region):::BFO --> AG(Temporal<br> Instant):::BFO
