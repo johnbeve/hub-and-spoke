@@ -28,7 +28,7 @@ graph TD
     A(Entity):::BFO --> B(Continuant):::BFO
     A(Entity):::BFO --> O(Occurrent):::BFO
 
-    classDef BFO fill:#4b0082,color:#00000
+    classDef BFO fill:#4b0082,color:#FFFFFF
 </pre>
 
 Starting at the continuant side of the BFO hierarchy, an independent continuant is distinguished from other continuants in that they neither generically nor specifically depend on other entities. In contrast, a specifically dependent continuant specifically depends on an independent continuant8 rigidly. If x specifically depends on y, then as long as x exists, the relation holds. If y ceases to exist, then x does as well.
