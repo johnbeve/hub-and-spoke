@@ -6,16 +6,13 @@ theme:
   palette:
     primary: 'black'
 nav:
-  - Introduction: introduction.md
   - Basic Formal Ontology: index.md
+  - Introduction: introduction.md
   - Scope: scope.md
   - Conformance: conformance.md
   - Conventions: conventions.md
   - Terms and Definitions: terms-and-definitions.md
   - BFO-Core: bfo-core.md
-  - Temporal Extensions: temporal-extensions.md
+  - Temporalized Relations: temporal-extensions.md
   - Users and Applications: users-and-applications.md
   - Summary: summary.md
-
-
-

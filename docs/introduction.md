@@ -1,4 +1,8 @@
-# Introduction
+# Introduction to Basic Formal Ontology
+
+introduction to BFO 
+  History - OBO, CCO, IOF, ISO...
+  BFO versioning history 
 
 Basic Formal Ontology (BFO) is a top-level ontology designed to support information integration, retrieval, and analysis across all domains of scientific investigation. Containing only general terms common across disciplines, BFO serves as the top-level ontology of the [Open Biomedical and Bioinformatic Ontology](https://obofoundry.org/) (OBO) Foundry and the [Industrial Ontology Foundry](https://industrialontologies.org/) (IOF).
 
