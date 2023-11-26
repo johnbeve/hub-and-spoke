@@ -60,7 +60,7 @@ gantt
     Review             :a5, after a4, 14d
     Documentation      :a6, after a5, 14d
 
-    section 
+    section  
 
     Alpha Release      :a7, 2024-01-25, 1d
     Beta Release       :a8, after a5, 1d
