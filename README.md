@@ -45,8 +45,28 @@ See the website here: https://johnbeve.github.io/hub-and-spoke/
 
 
 ## Versioning and Release Process
+```mermaid
+gantt
+    title BFO Releases
+    dateFormat  YYYY-MM-DD
+    todayMarker 2023-11-25
 
+    section  
 
+    Research           :a1, 2023-11-25, 7d
+    Resolving Issues   :a2, after a1, 14d
+    Implementation     :a3, after a2, 30d
+    Testing            :a4, after a3, 21d
+    Review             :a5, after a4, 14d
+    Documentation      :a6, after a5, 14d
+
+    section Release Milestones
+
+    Alpha Release      :a7, 2024-01-25, 1d
+    Beta Release       :a8, after a5, 1d
+    Final Release      :a9, after a6, 1d
+```
+    
 ## Basic Formal Ontology Reading
 For further information about building ontologies using BFO artifacts and strategies, see [Building Ontologies with Basic Formal Ontology](https://mitpress.mit.edu/9780262527811/building-ontologies-with-basic-formal-ontology/). \
 For information about upcoming and past events concerning BFO, see [NCOR](https://ncorwiki.buffalo.edu/index.php/Main_Page). 
